@@ -5,8 +5,8 @@ import TodoList from "./_components/TodoList";
 //export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const serverRes = await serverClient.getResponse("Hello Friend");
-  const serverRes2 = await serverClient.getListings();
+  const serverRes = await serverClient.response.getResponse("Hello Friend");
+  const serverRes2 = await serverClient.listings.getListings();
   
   return (
     <main className="max-w-3xl mx-auto mt-5">

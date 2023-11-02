@@ -1,10 +1,9 @@
 "use client";
-import { useState } from "react";
 
 import { trpc } from "../_trpc/client";
 
 export default function TodoList({initialData}: {initialData?: any}) {
-  const {data} = trpc.getListings.useQuery(undefined, {
+  const {data} = trpc.listings.getListings.useQuery(undefined, {
     refetchOnMount: false,
     refetchOnReconnect: false,
     suspense: true,
