@@ -2,7 +2,7 @@ import { serverClient } from "./_trpc/serverClient";
 import { Suspense } from "react";
 import TodoList from "./_components/TodoList";
 
-export const dynamic = "force-dynamic";
+//export const dynamic = "force-dynamic";
 
 export default async function Home() {
   const serverRes = await serverClient.getResponse("Hello Friend");
