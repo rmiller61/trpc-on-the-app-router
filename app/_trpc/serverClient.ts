@@ -1,6 +1,6 @@
 import { httpBatchLink } from "@trpc/client";
 
-import { appRouter } from "@/server";
+import { appRouter } from "../../server";
 
 const getBaseUrl = () => {
   if (typeof window !== "undefined") return "" // browser should use relative url
